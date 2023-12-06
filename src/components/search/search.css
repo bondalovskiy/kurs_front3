@@ -1,0 +1,40 @@
+.search-section {
+    min-height: 750px;
+}
+
+.search-title {
+    margin-left: 1%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    color: #b3b3b3;
+}
+
+.search-item {
+    text-align: left;
+    color: #7d7d7d;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 2%;
+    font-size: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.search-item:hover {
+    cursor: pointer;
+    background-color: #212121;
+    box-shadow: #212121 0 0 30px;
+    transition-duration: .5s;
+    color: #b3b3b3;
+}
+
+.search-image {
+    margin-right: 6%;
+    border-radius: 50%;
+    opacity: 90%;
+}
+
+.search-box {
+    max-width: 80%;
+}

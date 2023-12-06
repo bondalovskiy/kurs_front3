@@ -1,0 +1,39 @@
+@media (max-width: 1400px) {
+    .no-mob {
+        display: none;
+    }
+}
+
+@media (min-width: 1400px) {
+    .nav-search-item {
+        display: none;
+    }
+}
+
+.nav-col {
+    z-index: 1;
+    background-color: #121212;
+    top: 12%;
+    position: sticky;
+}
+
+.image-position {
+    margin-right: 5%;
+}
+
+.nav-item {
+    text-align: left;
+    color: #7d7d7d;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+    margin: 10px 0px 0px 0px;
+    font-size: 20px;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    background-color: #212121;
+    box-shadow: #212121 0 0 30px;
+    transition-duration: .5s;
+    color: #b3b3b3;
+}

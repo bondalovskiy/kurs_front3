@@ -1,0 +1,122 @@
+.analysis-container {
+    margin-top: 3%;
+    color: #b3b3b3;
+    min-height: 750px;
+}
+
+.analysis-section {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.analysis-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.analysis-image {
+    width: 100px;
+    height: 100px;
+}
+
+.analysis-name {
+    font-size: 30px;
+    color: #1db954;
+}
+
+.analysis-percentage {
+    font-size: 28px;
+}
+
+.playlist-container {
+    font-size: 18px;
+    text-align: center;
+    color: #b3b3b3;
+    min-height: 750px;
+}
+
+.playlist-img, .playlist-img-analysis {
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+}
+
+.playlist-img:hover, .playlist-img:active {
+    box-shadow: #b3b3b3 0 0 100px;
+    transition-duration: 0.3s;
+    transform: scale(1.05) perspective(1px);
+}
+
+.playlist-description {
+    font-size: 16px;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.playlist-item {
+    margin-bottom: 4%;
+}
+
+.playlist-title-description {
+    margin-bottom: 5%;
+}
+
+.back-playlist-button {
+    max-height: 55px;
+    max-width: 100px;
+    border-radius: 8px;
+    padding: 10px 30px 10px 30px;
+    font-size: 21px;
+    cursor: pointer;
+    color: black;
+    border: line;
+    background-color: #1db954;
+    box-shadow: #1db954 0 1px 10px;
+    transition-duration: .1s;
+}
+
+.back-playlist-button:hover {
+    box-shadow: #1db954 0 1px 30px;
+    transition-duration: 1s;
+}
+
+@media (max-width: 767px) {
+    .analysis-column {
+        font-size: 16px;
+    }
+    
+    .analysis-name {
+        font-size: 21px;
+    }
+    
+    .analysis-percentage {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 991px) {
+    .analysis-image {
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@media (max-width: 577px) {
+    .analysis-column {
+        font-size: 12px;
+    }
+    
+    .analysis-name {
+        font-size: 14px;
+    }
+    
+    .analysis-percentage {
+        font-size: 16px;
+    }
+}
+

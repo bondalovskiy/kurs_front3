@@ -1,0 +1,298 @@
+.profile-container {
+    margin-top: 2%;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+}
+
+.profile-username {
+    overflow: elipsis;
+    text-wrap: nowrap;
+}
+
+.profile-img-container {
+    margin-top: 2%;
+    justify-content: right;
+    min-height: 800px;
+}
+
+.name-container {
+    position: relative;
+}
+
+.button-container {
+    justify-content: center;
+    display: flex;
+}
+
+.follow-button {
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    width: 200px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 5px 5px 5px 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #1db954;
+    border: line;
+    background-color: #121212;
+    transition-duration: .1s;
+    border: 2px solid #1db954;
+}
+
+.unfollow-button {
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    width: 200px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 5px 5px 5px 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #8C0500;
+    border: line;
+    background-color: #121212;
+    transition-duration: .1s;
+    border: 2px solid #8C0500;
+}
+
+.unfollow-button:hover {
+    box-shadow: #8C0500 0 1px 10px;
+    transition-duration: 1s;
+}
+
+.follow-button:hover {
+    box-shadow: #1db954 0 1px 10px;
+    transition-duration: 1s;
+}
+
+.profile-name {
+    margin: 0;
+    position: absolute;
+    top: 28%;
+    transform: translateY(-50%);
+    color: #b3b3b3;
+    font-size: 50px;
+    width: 100%;
+}
+
+.profile-followers {
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    color: #7d7d7d;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.profile-social-img {
+    margin-left: 1%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.profile-button {
+    margin-left: 1%;
+    text-align: center;
+    min-width: 50px;
+    padding: 7px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #7d7d7d;
+    border-bottom: 7px solid #121212;
+}
+
+.profile-button:hover {
+    cursor: pointer;
+    color: #b3b3b3;
+    border-bottom: 7px solid #1db954;
+    transition-duration: .8s;
+}
+
+@media (max-width: 768px) {
+    .section-row {
+        margin-top: 15%;
+    }
+
+    .follow-button {
+        top: 115px;
+    }
+
+    .unfollow-button {
+        top: 115px;
+    }
+
+    .image-container {
+        margin-top: 50px;
+    }
+
+    .profile-followers {
+        margin-top: 40px;
+    }
+    
+    .matching-description {
+        font-size: 14px;
+    }
+
+    .profile-button {
+        font-size: 16px;
+    }
+
+    .col-matching {
+        margin-left: 12%;
+        font-size: 14px;
+  
+    }
+
+    .playlist-mid {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .profile-data-box {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (max-width: 432px) {
+    .matching-container {
+        margin-top: 20px;
+    }
+
+    .profile-name {
+        margin-top: 34px;
+        width: 50%;
+    }
+
+    .section-row {
+        margin-top: 30%;
+    }
+
+    .col-matching {
+        margin-bottom: 10px;
+    }
+
+    .col-statistics {
+        margin-bottom: 10px;
+    }
+}
+
+/* statistics section */
+.statistics-container {
+    margin-top: 1%;
+    color: #b3b3b3;
+}
+
+.index-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.track-col {
+    position: relative;
+}
+
+.main-name {
+    font-weight: 500;
+}
+
+.second-name {
+    color: #7d7d7d;
+}
+
+.scale-text {
+    color: #1db954;
+    font-size: 23px;
+}
+
+/* matching container */
+
+.matching-description {
+    margin-bottom: 2%;
+}
+
+.matching-container {
+    font-size: 18px;
+    margin-bottom: 8%;
+}
+
+/* playlist-battle container */
+.playlist-battle-container {
+    justify-content: center;
+    display: flex;
+}
+
+.playlist-title {
+    color: #b3b3b3;
+}
+
+.playlist-battle-description {
+    margin-top: 7%;
+}
+
+.playlist-row {
+    color: #b3b3b3;
+    text-align: center;
+}
+
+.carousel-button {
+    background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+    
+.playlist-cover-text {
+    margin-top: 2%;
+    color: #b3b3b3;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.playlist-mid {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+.loser-text {
+    font-size: 23px;
+    color: #8C0500;
+}
+
+.nick-text {
+    color: #7d7d7d;
+}
+
+.playlist-carousel {
+    min-height: 90px;
+}
+
+.playlist-slider {
+    min-height: 230px;
+}
+
+.result-battle-col {
+    justify-content: center;
+    display: flex;
+}
+
+@media (max-width: 1439px) {
+    .battle-title {
+        font-size: 14px;
+    }
+}

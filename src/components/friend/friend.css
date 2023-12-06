@@ -1,0 +1,65 @@
+@media (max-width: 1400px) {
+    .friend-col {
+        display: none;
+    }
+}
+
+.friend-col {
+    margin-left: 20%;
+    z-index: 1;
+    background-color: #121212;
+    top: 11%;
+    position: sticky;
+}
+
+.friend-title {
+    text-align: left;
+    color: #7d7d7d;
+    padding: 15px;
+    border-radius: 10px 0px 0px 10px;
+    margin: 0px 0px 0px 0px;
+    font-size: 20px;
+}
+
+.friend-list {
+    overflow: auto;
+    max-height: 600px;
+}
+
+.friend-list::-webkit-scrollbar {
+    width: 2px;
+}
+  .friend-list::-webkit-scrollbar-thumb {
+    background: #363434;
+  }
+  
+  .friend-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.friend-item {
+    text-align: left;
+    color: #7d7d7d;
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+    margin: 0px 0px 0px 0px;
+    font-size: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.friend-item:hover {
+    cursor: pointer;
+    background-color: #212121;
+    box-shadow: #212121 0 0 30px;
+    transition-duration: .5s;
+    color: #b3b3b3;
+}
+
+.friend-image {
+    margin-right: 6%;
+    border-radius: 50%;
+    opacity: 90%;
+}
+

@@ -1,0 +1,46 @@
+.export-section {
+    font-size: 21px;
+    color: #b3b3b3;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.export-button {
+    justify-content: center;
+    display: flex;
+}
+
+.create-button {
+    min-width: 250px;
+    width: 20%;
+    height: 90%;
+}
+
+.check-playlist-button {
+    min-width: 250px;
+    border-radius: 8px;
+    margin: 25px 1px 50px 25px;
+    padding: 10px;
+    font-size: 21px;
+    cursor: pointer;
+    color: black;
+    border: line;
+    background-color: #1db954;
+    box-shadow: #1db954 0 1px 30px;
+    transition-duration: .1s;
+}
+
+.check-playlist-button:hover {
+    box-shadow: #1db954 0 1px 50px;
+    transition-duration: 1s;
+}
+
+.nav-range-item:active {
+    background-color: #212121;
+    box-shadow: #212121 0 1px 20px;
+}
+
+.nav-range-item:focus {
+    background-color: #212121;
+    box-shadow: #212121 0 1px 20px;
+}

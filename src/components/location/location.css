@@ -1,0 +1,133 @@
+.location-container {
+    min-height: 800px;
+}
+
+.world-img {
+    margin-top: 40px;
+    max-width: 1146px;
+    height: 560px;
+    opacity: .6;
+}
+
+@media only screen and (max-device-width: 1540px ) {
+    .world-img {
+        max-width: 800px;
+        height: 391px;
+    }
+}
+
+@media only screen and (max-device-width: 810px) {
+    .world-img {
+        max-width: 320px;
+        height: 156px;
+    }
+}
+
+.location-buttons {
+    position: absolute;
+    top: 36%;
+    z-index: 1;
+}
+
+.location-section {
+    position: relative;
+    min-height: 750px;
+    justify-content: center;
+    display: flex;
+}
+
+.location-description {
+    opacity: 0.85;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: #121212;
+    position: absolute;
+    top: 15%;
+    left: 31%;
+    height: 250px;
+    width: 500px;
+    z-index: 0;
+}
+
+.location-description-inner {
+    margin: 15px 15px 0px 15px;
+}
+
+.match-users-button {
+    background-color: #1db954;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #121212;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 4rem;
+    width: 12rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.nearby-users-button {
+    background-color: #00A573;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #121212;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 4rem;
+    width: 12rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.map-popup {
+    width: 150px;
+    height: 85px;
+    font-size: 14px;
+    color: #121212;
+}
+
+.map-popup-line {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+
+.map-popup-title {
+    font-size: 16px;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+    display: flex;
+    justify-content: left;
+    margin: auto;
+    width: 70%;
+}
+
+.map-popup-img {
+    display: flex;
+    justify-content: left;
+}
+
+.popup-background {
+    background-color: wheat;
+}

@@ -1,0 +1,65 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+@media (max-width: 1185px) {
+    .nav-item {
+        margin: 0 0 0 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-item {
+        font-size: 19px;
+    }
+}
+
+.section-nav {
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.nav-range-item {
+    border-radius: 8px;
+    margin: 25px 12px 50px 12px;
+    padding: 10px;
+    font-size: 21px;
+    cursor: pointer;
+    color: black;
+    border: line;
+    background-color: #1db954;
+}
+
+.nav-range-item:hover {
+    cursor: pointer;
+    color: black;
+    border: line;
+    background-color: #1db954;
+    box-shadow: #1db954 0 1px 25px;
+    transition-duration: 0.5s;
+}
+
+.panel {
+    margin-bottom: 100px;
+}
+
+.animate-fade {
+    animation-duration: 1.5s;
+    animation-name: animate-fade;
+    animation-delay: 0.1s;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes animate-fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@media (min-width: 768px) {
+    .iphone-button {
+      padding: 0 1.2rem;
+    }
+  }
