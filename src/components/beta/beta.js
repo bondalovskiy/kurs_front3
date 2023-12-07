@@ -46,10 +46,10 @@ function Beta() {
         <div>
             <div className='container mt-5'>
                 <div className='beta-section'>
-                    <h1 className='beta-title'>Beta users</h1>
+                    <h1 className='beta-title'>beta users panel</h1>
                     <div style={{ justifyContent: "center", display: "flex", marginBottom: "2%" }}>
                         <div className="button-submit" onClick={() => handleDelete()}
-                            style={{ textAlign: "center", width: '100px' }}>Delete all</div>
+                            style={{ textAlign: "center", width: '200px' }}>Delete all (db incl.)</div>
                     </div>
                     <table className="list" style={{ fontSize: "16px" }}>
                         {data.map((item, index) => {
@@ -65,11 +65,11 @@ function Beta() {
                                         <td>
                                         </td>
                                         <td>{new Intl.DateTimeFormat('en-US',
-                                            { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' })
+                                            { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit'})
                                             .format(Date.parse(new Date(item.date).toLocaleString("en-US", { timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone })))}</td>
                                         <td>
-                                            {!item.active && <div className="button-submit" onClick={() => handleSubmit(item.fullName, item.email, null)} style={{ textAlign: "center" }}>Activate</div>}
-                                            {item.active && <div className="button-submit" style={{ opacity:"0.2", textAlign: "center" }}>Activated</div>}
+                                            {!item.active && <div className="button-submit" onClick={() => handleSubmit(item.fullName, item.email, null)} style={{ textAlign: "center" }}>Enable</div>}
+                                            {item.active && <div className="button-submit" style={{ opacity:"0.2", textAlign: "center" }}>Enabled</div>}
                                         </td>
                                     </tr>
                                 </tbody>)

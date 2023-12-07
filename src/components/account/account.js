@@ -41,7 +41,7 @@ function Account() {
         <div className="container panel" style={{textAlign:"center"}}>
             <h1 style={{color:"#b3b3b3"}}>Account Settings</h1>
             <hr/>
-            <h5 style={{marginBottom:"70px", color:"#7d7d7d"}}>Here you can check your Spotify account settings, add social links and also delete your account.</h5>
+            <h5 style={{marginBottom:"70px", color:"#7d7d7d"}}>Link to Spotify (sooner or later i'll massacre this api). Links to socials and account deletion.</h5>
             <form onSubmit={handleSubmit} autoComplete="off">
                 <div className="link-container">
                     <div className="row input-row">
@@ -53,15 +53,11 @@ function Account() {
                         <div className="col-sm-9 col-settings mb-2">
                             <a className="form-control-plaintext link-settings" href={'https://open.spotify.com/user/' + profile.externalId}>https://open.spotify.com/user/{profile.externalId}</a>
                         </div>
-                        <label htmlFor="instagram-input" className="col-sm-3 col-form-label label-settings">Instagram link</label>
+                        <label htmlFor="instagram-input" className="col-sm-3 col-form-label label-settings">Instagram</label>
                         <div className="col-sm-9 col-settings mb-2">
                             <input type="text" className="form-control link-input" defaultValue={profile.linkIg} name="instagram" id="instagram-input"/>
                         </div>
-                        <label htmlFor="facebook-input" className="col-sm-3 col-form-label label-settings">Facebook link</label>
-                        <div className="col-sm-9 col-settings mb-2">
-                            <input type="text" className="form-control link-input" defaultValue={profile.linkFb} name="facebook" id="facebook-input"/>
-                        </div>
-                        <label htmlFor="twitter-input" className="col-sm-3 col-form-label label-settings">Twitter link</label>
+                        <label htmlFor="twitter-input" className="col-sm-3 col-form-label label-settings">Twitter</label>
                         <div className="col-sm-9 col-settings mb-2">
                             <input type="text" className="form-control link-input" defaultValue={profile.linkTwitter} name="twitter" id="twitter-input"/>
                         </div>
@@ -72,7 +68,7 @@ function Account() {
                 </div>
             </form>
             <div style={{display:"flex", justifyContent:"center", marginTop:"80px"}}>
-                <div className="button-delete" onClick={() => setDeletePopup(true)}>I want to delete my account</div>
+                <div className="button-delete" onClick={() => setDeletePopup(true)}>delete my account</div>
             </div>
             <DeletePopup trigger={deletePopup} callbackTrigger={setDeletePopup}/>
             <div style={{marginTop:"30px", display:"flex", justifyContent:"center"}}>

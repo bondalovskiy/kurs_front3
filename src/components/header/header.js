@@ -35,7 +35,7 @@ function HeaderLogged() {
                     </Link>
                 </div>
                 <div className="col-sm-6 col-md-4 header-content">
-                    Hello, {sessionStorage.getItem('username')}
+                    hi, {sessionStorage.getItem('username')}
                 </div>
                 <div className="col header-account">
                     <div className="dropdown">
@@ -44,10 +44,10 @@ function HeaderLogged() {
                         <ul className="dropdown-menu dropdown-menu-end dropdown-menu-dark animate-bar" aria-labelledby="dropdownMenuButton1">
                             <li><h6 className="dropdown-header">{sessionStorage.getItem('username')}</h6></li>
                             <li className="dropdown-item dropdown-link-item"><Link to="/user/profile" state={{ id: id }} className="link-item">Your profile</Link></li>
-                            {sessionStorage.getItem('username') === getConfiguration().roleUsername ? <li className="dropdown-item dropdown-link-item"><Link to="/admin/beta" className="link-item">Control panel</Link></li> : null}
+                            {sessionStorage.getItem('username') === getConfiguration().roleUsername ? <li className="dropdown-item dropdown-link-item"><Link to="/admin/beta" className="link-item">Beta users</Link></li> : null}
                             <li className="dropdown-item dropdown-link-item"><Link to="/user/account" className="link-item">Account</Link></li>
                             <li><hr className="dropdown-divider" /></li>
-                            <li className="dropdown-item dropdown-link-item" onClick={logOut}><Link to="/" className="link-item">Sign Out</Link></li>
+                            <li className="dropdown-item dropdown-link-item" onClick={logOut}><Link to="/" className="link-item">Log Out</Link></li>
                         </ul>
                     </div>
                 </div>

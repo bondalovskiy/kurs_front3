@@ -37,7 +37,7 @@
 }
 
 .link-input:focus {
-    box-shadow: #1db954 0 1px 5px;
+    box-shadow: #1db954 0 1px 1px;
     border-color: #1db954;
     color: #b3b3b3;
     background-color: #212121;
@@ -65,34 +65,32 @@
     color: black;
     border: none;
     background-color: #1db954;
-    box-shadow: #1db954 0 1px 20px;
-    transition-duration: .6s;
+    box-shadow: #1db954 0 1px 5px;
+    transition-duration: .1s;
 }
 
 .button-delete:hover {
-    color: #1db954;
+    color: #8d0000;
     cursor: pointer;
 }
 
 .button-back {
     border-radius: 8px;
     padding: 5px 30px 5px 30px;
-    font-size: 18px;
+    font-size: 21px;
     cursor: pointer;
-    color: #b3b3b3;
-    border: 5px solid #121212;
-    border-bottom: 5px solid #1db954;
+    color: black;
+    border: none;
+    background-color: #1db954;
 }
 
 .button-back:hover {
-    border-radius: 8px;
     cursor: pointer;
     color: black;
-    border: line;
+    border: none;
     background-color: #1db954;
-    box-shadow: #1db954 0 1px 20px;
-    border: 5px solid #1db954;
-    transition-duration: .5s;
+    box-shadow: #1db954 0 1px 5px;
+    transition-duration: .1s;
 }
 
 .popup-btn {
@@ -104,23 +102,23 @@
     cursor: pointer;
     color: black;
     border: none;
-    box-shadow: #00A573 0 1px 15px;
+    box-shadow: #00A573 0 1px 5px;
     background-color: #00A573;
-    transition-duration: .6s;
+    transition-duration: .1s;
 }
 
 .popup-btn:hover {
-    box-shadow: #1db954 0 1px 25px;
-    transition-duration: .6s;
+    box-shadow: #1db954 0 1px 10px;
+    transition-duration: .1s;
 }
 
 .popup-btn-yes-position {
     background-color: #1db954;
-    top: 265px;
+    top: 165px;
     right: 380px;
 }
 
 .popup-btn-no-position {
-    top: 265px;
+    top: 165px;
     right: 130px;
 }

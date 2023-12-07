@@ -13,6 +13,24 @@ function Search({ showBar, setShowBar }) {
     return (
         <div className="user-search">
             <div className="wrapper-form">
+                <form onSubmit={handleSearch} autoComplete="off">
+                    <div className="search-bar animate-bar">
+                        <input type="text" style={{ marginTop: "0" }} className="search-input form-control" id="username" name="username" aria-describedby="email-help" placeholder="Search..." />
+                        <button className="search-button animate-bar" type="submit">
+                            <center>
+                                <img style={{ marginBottom: "8%", marginRight: "10%" }} width="25" height="25" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1" />
+                            </center>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    );
+}
+
+export default Search;
+
+{/*             <div className="wrapper-form">
                 {showBar && <div className="search-bar-hidden">
                     <input style={{ marginTop: "0" }} className="search-input-hidden form-control" id="username" name="username" />
                     <button className="search-button-hidden" onMouseOver={() => setShowBar(false)}>
@@ -30,9 +48,4 @@ function Search({ showBar, setShowBar }) {
                         </button>
                     </div>
                 </form>}
-            </div>
-        </div>
-    );
-}
-
-export default Search;
+            </div> */}

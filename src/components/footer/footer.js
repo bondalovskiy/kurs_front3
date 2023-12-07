@@ -15,34 +15,19 @@ function footer() {
                         <Link to="/" className="link-item">
                         <li>Home</li>
                         </Link>
-                        <Link to="/" className="link-item">
-                        <li>Spotapp</li>
-                        </Link>
                     </ul>
                 </div>
                 <div className="col">
                     <ul>
-                        <li className="footer-title">Socials</li>
-                        <li>Instagram</li>
-                        <li><a href="https://github.com/laa66" className="link-item">GitHub</a></li>
-                    </ul>
-                </div>
-                <div className="col">
-                    <ul>
-                        <li className="footer-title">Legal</li>
+                        <li className="footer-title">Legal stuff</li>
+                        <li>nothing in here</li>
                         <li>Privacy</li>
                         <li>Terms</li>
                     </ul>
                 </div>
-                <div className="col" id="col-empty">
-                
-                </div>
-                <div className="col" id="footer-logo">
-                    <img src={logo} alt={"logo"} width={"100px"} height={"33px"}/>
-                </div>
                 <div className="footer-copyright">
-                    <p>All copyrighted content (i.e. album artwork) are owned by their respective owners. Data is provided by Spotify AB.</p>
-                    <p>&copy; 2023.</p>
+                    <p>copyrighted content are owned by their owners. Data is provided by Spotify AB.</p>
+                    <p>&copy; kinda my smart ass. 2023.</p>
                 </div>
             </div>
         </div>

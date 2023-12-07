@@ -191,7 +191,7 @@ function HistoryList({list}) {
                                     return (i + 1 === arr.length ? artist.name : artist.name + ", ")
                                 })}</td>
                                 <td className="col-fourth" id="time-col">{new Intl.DateTimeFormat('en-US', 
-                                {year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit'})
+                                {year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit'})
                                 .format(Date.parse(new Date(data.played_at).toLocaleString("en-US", {timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone})))}</td>
                             </tr>
                     </tbody>)})}

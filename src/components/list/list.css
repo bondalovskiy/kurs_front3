@@ -50,13 +50,13 @@ tr.track-row>td {
 .track-row:hover * {
     cursor: pointer;
     background-color: #212121;
-    box-shadow: #212121 0 0 20px;
-    transition-duration: 0.6s;
+    box-shadow: #212121 0 0 5px;
+    transition-duration: 0.1s;
     color: #b3b3b3;
 }
 
 .track-img {
-    border-radius: 50%;
+    border-radius: 0%;
     width: 50px;
     height: 50px;
     margin-right: 25px;
@@ -98,14 +98,14 @@ tr.track-row>td {
 }
 
 .artist-img {
-    border-radius: 50%;
+    border-radius: 0%;
     width: 200px;
     height: 200px;
 }
 
 .artist-img:hover, .artist-img:active {
-    box-shadow: #b3b3b3 0 0 50px;
-    transition-duration: 0.3s;
+    box-shadow: #b3b3b3 0 0 10px;
+    transition-duration: 0.1s;
     transform: scale(1.05) perspective(1px);
 }
 
@@ -115,7 +115,7 @@ tr.track-row>td {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 82px;
+    font-size: 60px;
     font-weight: 700;
     color: #121212;
 }
@@ -145,7 +145,7 @@ tr.track-row>td {
     width: 70px;
     height: 160px;
     background-color: #1db954;
-    border-radius: 4px;
+    border-radius: 5px;
     overflow: hidden;
     margin: 10px 0;
     position: relative;

@@ -23,14 +23,9 @@ function DeletePopup({ trigger, callbackTrigger }) {
         <div className="popup animate-fade">
             <div className="popup-inner">
                 <br />
-                <h4>Are you sure you want to delete your account?</h4>
+                <h4>You want to delete your account?</h4>
                 <br />
-                <div style={{ opacity: ".85" }}>This action is irreversible and will delete all your data, including statistics and user information. 
-                Once deleted, this data cannot be recovered.
-                <br/>
-                <br/>
-                Please confirm that you understand the consequences of this action.
-                <hr/>
+                <div style={{ opacity: ".85" }}>This action is irreversible and will delete all your data... blabla.
                 </div>
                 <button className="popup-btn popup-btn-yes-position" onClick={() => handleDelete()}><Link to="/" className="link-item">Delete</Link></button>
                 <button className="popup-btn popup-btn-no-position" onClick={() => callbackTrigger(false)}>Cancel</button>

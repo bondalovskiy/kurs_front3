@@ -91,7 +91,7 @@
     border-color: #535353;
     color: #b3b3b3;
     background-color: #212121;
-    transition-duration: 0.8s;
+    transition-duration: 0.1s;
 }
 
 @keyframes animate-fade {
@@ -101,7 +101,7 @@
   }
 
 .animate-bar {
-    animation-duration: .6s;
+    animation-duration: .1s;
     animation-name: animate-fade;
     animation-delay: 0.1s;
     animation-fill-mode: backwards;
@@ -133,7 +133,7 @@
 }
 
 .user-image:hover {
-    box-shadow: white 0 1px 15px;
+    box-shadow: white 0 1px 5px;
     transition-duration: .1s;
 }
 

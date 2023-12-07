@@ -52,8 +52,8 @@
 .friend-item:hover {
     cursor: pointer;
     background-color: #212121;
-    box-shadow: #212121 0 0 30px;
-    transition-duration: .5s;
+    box-shadow: #212121 0 0 10px;
+    transition-duration: .1s;
     color: #b3b3b3;
 }
 

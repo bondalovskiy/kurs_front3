@@ -18,8 +18,8 @@
 }
 
 .analysis-image {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 
 .analysis-name {
@@ -45,7 +45,6 @@
 }
 
 .playlist-img:hover, .playlist-img:active {
-    box-shadow: #b3b3b3 0 0 100px;
     transition-duration: 0.3s;
     transform: scale(1.05) perspective(1px);
 }
@@ -76,13 +75,13 @@
     color: black;
     border: line;
     background-color: #1db954;
-    box-shadow: #1db954 0 1px 10px;
+    box-shadow: #1db954 0 1px 5px;
     transition-duration: .1s;
 }
 
 .back-playlist-button:hover {
-    box-shadow: #1db954 0 1px 30px;
-    transition-duration: 1s;
+    box-shadow: #1db954 0 1px 10px;
+    transition-duration: .1s;
 }
 
 @media (max-width: 767px) {

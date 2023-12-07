@@ -16,6 +16,11 @@
     height: 90%;
 }
 
+.create-button:hover {
+    box-shadow: #1db954 0 1px 10px;
+    transition-duration: .1s;
+}
+
 .check-playlist-button {
     min-width: 250px;
     border-radius: 8px;
@@ -26,21 +31,21 @@
     color: black;
     border: line;
     background-color: #1db954;
-    box-shadow: #1db954 0 1px 30px;
+    box-shadow: #1db954 0 1px 5px;
     transition-duration: .1s;
 }
 
 .check-playlist-button:hover {
-    box-shadow: #1db954 0 1px 50px;
-    transition-duration: 1s;
+    box-shadow: #1db954 0 1px 10px;
+    transition-duration: .1s;
 }
 
 .nav-range-item:active {
     background-color: #212121;
-    box-shadow: #212121 0 1px 20px;
+    box-shadow: #212121 0 1px 10px;
 }
 
 .nav-range-item:focus {
     background-color: #212121;
-    box-shadow: #212121 0 1px 20px;
+    box-shadow: #212121 0 1px 10px;
 }

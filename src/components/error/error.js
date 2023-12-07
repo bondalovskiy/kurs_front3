@@ -11,10 +11,10 @@ function Error({code}) {
     }
     return (
         <div className="container error-section">
-            <div className="error-title">Ooops...</div>
+            <div className="error-title">Well oops...</div>
             <div className="error-code">{code.split('&')[0] + ' ' + httpStatus[code.split('&')[0]]}</div>
             <div className="error-message">{code.split('&')[1]}</div>
-            <div className="error-refresh">Refresh and try again.</div>
+            <div className="error-refresh">Try again.</div>
             <div style={{ display: "flex", justifyContent: "center" }}>
                 <button onClick={refresh} type="submit" className="button-link mt-3">Refresh</button>
             </div>

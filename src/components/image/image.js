@@ -10,9 +10,9 @@ function ImageTrack({list, date}) {
                     )})}
             </div>
             <div className="image-description">
-                <h1>Discover your favorite tracks with ease</h1>
-                <p style={{color:"#7d7d7d"}}>Our Top Tracks section highlights your most-played tracks, so you can keep the music going</p>
-                <div className='arrows-description'>{date === null ? <br/> : 'The arrows show the change in the tracks ranking since your last visit on ' + date}</div>
+                <h1>Your top tracks</h1>
+                <p style={{color:"#7d7d7d"}}>Page highlights the tracks you listen to most frequently</p>
+                <div className='arrows-description'>{date === null ? <br/> : 'arrows show the change in the ranking since ' + date}</div>
             </div>
         </div>
     );
@@ -28,9 +28,9 @@ function ImageArtist({list, date}) {
                     )})}
             </div>
             <div className="image-description">
-                <h1>Explore your musical taste</h1>
-                <p style={{color:"#7d7d7d"}}>Our Top Artist section showcases your most-played artists, so you can dive deeper into their catalog and discover new tracks</p>
-                <div className='arrows-description'>{date === null ? <br/> : 'The arrows show the change in the artists ranking since your last visit on ' + date}</div>
+                <h1>Your top artists</h1>
+                <p style={{color:"#7d7d7d"}}>Page highlights the artists you listen to most frequently</p>
+                <div className='arrows-description'>{date === null ? <br/> : 'arrows show the change in the ranking since ' + date}</div>
             </div>
         </div>
     );
@@ -40,9 +40,9 @@ function ImageGenre({date}) {
     return (
         <div className="container">
             <div className="image-description">
-                <h1>Discover the breadth of your musical interests</h1>
-                <p style={{color:"#7d7d7d"}}>Our Top Genres section highlights the genres you listen to most frequently, so you can explore new artists and tracks within those genres</p>
-                <div className='arrows-description'>{date === null ? <br/> : 'The arrows show the change in the genres ranking since your last visit on ' + date}</div>
+                <h1>Your top genres</h1>
+                <p style={{color:"#7d7d7d"}}>Page highlights the genres you listen to most frequently</p>
+                <div className='arrows-description'>{date === null ? <br/> : 'arrows show the change in the ranking since ' + date}</div>
             </div>
         </div>
     );
@@ -52,8 +52,8 @@ function ImageAnalysis() {
     return (
         <div className="container">
             <div className="image-description">
-                <h1>See how your musical taste stacks up</h1>
-                <div style={{color:"#7d7d7d"}}>Here, you can gain valuable insights and access various metrics that provide a deeper understanding of your musical preferences and characteristics.</div>
+                <h1>Mood of your music taste</h1>
+                <div style={{color:"#7d7d7d"}}>Spotify measures this type of info of the songs you listen to. Description provided by spotify themselves.</div>
             </div>
         </div>
     );
@@ -69,8 +69,8 @@ function ImageRecently({list}) {
                     )})}
             </div>
             <div className="image-description mb-4">
-                <h1>Never miss a beat</h1>
-                <div style={{color:"#7d7d7d"}}>Our Recently Played section keeps track of the songs you've listened to recently, so you can easily revisit your favorites.</div>
+                <h1>Your recent plays</h1>
+                <div style={{color:"#7d7d7d"}}>Page highlights tracks you listened recently</div>
             </div>
         </div>
     );

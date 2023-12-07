@@ -48,11 +48,9 @@ function PlaylistInsights() {
     return (
         <div className="container playlist-container">
             <div className="playlist-title-description">
-                <h1>Playlist insights</h1>
+                <h1>Playlist mood</h1>
                 <p style={{ color: "#7d7d7d" }}>
-                    You can delve into and analyze the data
-                    behind your playlists by selecting one from your collection.
-                    We'll then offer you valuable insights and statistics to enhance your understanding.
+                    Library mood but for ur recently played playlists. No need to praise me, thx.
                 </p>
             </div>
             {active === "playlists" && <div className="row row-cols-xl-1 row-cols-xl-2 row-cols-xl-3 row-cols-xl-4 row-cols-xl-5">

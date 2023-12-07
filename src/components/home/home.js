@@ -34,53 +34,20 @@ export function Home() {
     return (
         <div className="animate-fade">
             <div className="container section-title">
-                <p>Your Spotify statistics on-demand</p>
-            </div>
-            <div className="container section">
-                <div className="content">
-                    <div className="slides">
-                        <div className="slide-content">
-                            <img className="image" src={tracks} alt={"tracks"} width={"600px"} height={"300px"} />
-                            <div className="centered">Your Top tracks</div>
-                        </div>
-                        <div className="slide-content">
-                            <img className="image" src={concert} alt={"concert"} width={"600px"} height={"300px"} />
-                            <div className="centered">Your Top artists</div>
-                        </div>
-                        <div className="slide-content">
-                            <img className="image" src={score} alt={"concert"} width={"600px"} height={"300px"} />
-                            <div className="centered">Audio analysis</div>
-                        </div>
-                        <div className="slide-content">
-                            <img className="image" src={genres} alt={"concert"} width={"600px"} height={"300px"} />
-                            <div className="centered">Your Top genres</div>
-                        </div>
-                        <div className="slide-content">
-                            <img className="image" src={playlists} alt={"concert"} width={"600px"} height={"300px"} />
-                            <div className="centered">Export playlists</div>
-                        </div>
-                    </div>
-                </div>
+                <p>Spotify statistics on-demand</p>
             </div>
             <div className="container section-two">
-                
                 <div className="row">
                     <div className="col-sm">
                         <div className="container section-description">
-                            <p className="section-two-title">Tired of waiting for Spotify Wrapped?</p>
-                            <p>Discover your musical taste with our Spotify-powered app!</p>
-                            <p>Our app seamlessly integrates with Spotify API to bring you a
-                                comprehensive view of your music preferences.</p>
-                            <p>With different features you can discover new music and curate
-                                personalized playlists.</p>
-                            <p> With an intuitive design and seamless integration, you can immerse yourself
-                                in your music like never before.</p>
+                            <p className="section-two-title">Your mini Spotify Wrapped</p>
+                            <p>SpotifyAPI-powered app. blabla. more description.</p>
                             <hr />
                             <p className="iphone-text">Login with your Spotify account to see your Top tracks, artists and more!</p>
                         </div>
                     </div>
                     <div className="col-sm">
-                        <center><img src={iphone} alt="iphone" width="240px" height="450px" /></center>
+                        <center><img src={iphone} alt="iphone" width="213px" height="400px" /></center>
                         <img className="iphone-logo logo-position" src={spotifylogo} alt="spotifylogo" width={"157px"} height={"47px"} />
                         <button className="iphone-button button-position" onClick={() => setButtonPopup(true)}>Login with Spotify</button>
                         <button className="iphone-button-2 button-position-2" onClick={executeScroll}>Join Beta</button>
@@ -89,33 +56,23 @@ export function Home() {
                 </div>
             </div>
             <div className="container test-section" ref={beta}>
-            <h1 className="test-section-title">Sign up as a beta-tester!</h1>
+            <h1 className="test-section-title">Sign up for a beta</h1>
             <div className="row">
                 <div className="col test-section-description-1">
-                    <p>Please provide full name and email associated with your Spotify account</p>
+                    <p>provide your name and email associated with your Spotify account</p>
                     <div className="wrapper-form">
                         <form onSubmit={handleSubmit} autoComplete="off">
                             <div className="mb-3">
-                                <input type="text" className="beta-form-input form-control" id="username" name="username" aria-describedby="email-help" placeholder="Full name"/>
+                                <input type="text" className="beta-form-input form-control" id="username" name="username" aria-describedby="email-help" placeholder="Name"/>
                             </div>
                             <div className="mb-3">
-                                <input type="email" className="beta-form-input form-control" id="email" name="email" placeholder="Email address"/>
-                                <div id="email-help" className="form-text">We'll never share your data with anyone else.</div>
+                                <input type="email" className="beta-form-input form-control" id="email" name="email" placeholder="Email"/>
+                                <div id="email-help" className="form-text">Ur data is safe type of bullshit. source: trust me bro.</div>
                             </div>
                             <button type="submit" className="register-button" 
                             onClick={toggleConfirmation} disabled={disable} style={disable ? {opacity:'0.7'} : null}>{showConfirmation}</button>
                         </form>
                     </div> 
-                </div>
-                <div className="col test-section-description-2">
-                    <p style={{fontSize:"21px", textAlign:"center"}}>Important note</p>
-                    <hr/>
-                    <span style={{fontSize:"16px"}}>
-                    <p>To access our Spotify-powered web application, please register with your full name and Spotify email address that are associated with your Spotify account.</p>
-                    <p>This is necessary because we use the basic version of the Spotify API and need to add testers to our Spotify developer panel in order to grant them access to our application.
-                          Once you register, your access will be assigned within 15 minutes, and you will receive a confirmation email with instructions on how to get started.</p>
-                    <p>Thank you for your interest in testing our application and helping us improve our service!</p>
-                    </span>
                 </div>
             </div>
         </div>

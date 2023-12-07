@@ -7,7 +7,7 @@ function Friend({friends}) {
     return (
         <div className="friend-col">
             <h2 className="friend-title">
-                <div className="link-item">Your friends - {friends?.size}</div>
+                <div className="link-item">Friends - {friends?.size}</div>
             </h2>
             <div className="friend-list">
             {friends?.users?.map((data, i) => {
