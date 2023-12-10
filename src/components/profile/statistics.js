@@ -57,7 +57,7 @@ function statistics({ profile }) {
             </div>
             <div className="row" style={{color:"#7d7d7d", fontStyle:"italic"}}>
                 <div className="col">
-                    <p>* Based on your all-time statistics</p>
+                    <p>* All rime range</p>
                 </div>
             </div>
         </div>

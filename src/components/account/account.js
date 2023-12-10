@@ -57,6 +57,10 @@ function Account() {
                         <div className="col-sm-9 col-settings mb-2">
                             <input type="text" className="form-control link-input" defaultValue={profile.linkIg} name="instagram" id="instagram-input"/>
                         </div>
+                        <label htmlFor="facebook-input" className="col-sm-3 col-form-label label-settings">Facebook</label>
+                        <div className="col-sm-9 col-settings mb-2">
+                            <input type="text" className="form-control link-input" defaultValue={profile.linkFb} name="facebook" id="facebook-input"/>
+                        </div>
                         <label htmlFor="twitter-input" className="col-sm-3 col-form-label label-settings">Twitter</label>
                         <div className="col-sm-9 col-settings mb-2">
                             <input type="text" className="form-control link-input" defaultValue={profile.linkTwitter} name="twitter" id="twitter-input"/>

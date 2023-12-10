@@ -25,29 +25,29 @@ function Matching({ profile }) {
         <div className="container statistics-container">
             <div className="matching-description">
                 <h3>Library matching</h3>
-                <div>Here you can check how similar your music taste is to that of this user</div>
+                <div>Here you can check how similar your music taste</div>
             </div>
             <div className="row main-name text-center matching-container">
                 <div className="col-2 col-matching">
-                    <span>Artist matching</span>
+                    <span>Artists match</span>
                     <div className="scale-text">{match?.['artist']}%</div>
                 </div>
                 <div className="col-2 col-matching">
-                    <span>Track matching</span>
+                    <span>Tracks match</span>
                     <div className="scale-text">{match?.['track']}%</div>
                 </div>
                 <div className="col-2 col-matching">
-                    <span>Genre matching</span>
+                    <span>Genres match</span>
                     <div className="scale-text">{match?.['genre']}%</div>
                 </div>
                 <div className="col">
-                    <span style={{fontSize:"28px"}}>Overall matching</span>
+                    <span style={{fontSize:"28px"}}>Overall</span>
                     <div className="scale-text" style={{fontSize:"48px"}}>{match?.['overall']}%</div>
                 </div>
             </div>
             <div className="row" style={{color:"#7d7d7d", fontStyle:"italic"}}>
                 <div className="col">
-                    <span>* Based on your top tracks, top artists and top genres in all time ranges</span>
+                    <span>* Based on your top tracks, artists, genres. All time range</span>
                 </div>
             </div>
         </div>

@@ -30,10 +30,10 @@ function Rank() {
                     <span className="rank-index title-rank">#</span>
                 </div>
                 <div className="col-8">
-                    <span className="rank-index title-rank">User</span>
+                    <span className="rank-index title-rank">Username</span>
                 </div>
                 <div className="col-3 title-rank d-flex justify-content-left" style={{color:"#1db954"}}>
-                    <span>Points</span>
+                    <span>Pts</span>
                 </div>
             </div>
             {ranking?.map((data, index) => {

@@ -88,9 +88,9 @@ function Profile({ callback }) {
                         <b className="me-3 profile-username">{profile.username}</b>
                         {profile?.linkIg !== null ? <img src={instagram} alt={'insta'} className="profile-social-img" onClick={() => window.open(profile.linkIg, "_blank", "noreferrer")}/> : 
                             <img src={instagram} alt={'insta'} className="profile-social-img" style={disableSocialStyle}/>}
-                        {profile?.linkFb !== null ? <img src={facebook} alt={'fb'} className="profile-social-img" onClick={() => window.open(profile.linkFb, "_blank", "noreferrer")}/> :
+                       {profile?.linkFb !== null ? <img src={facebook} alt={'fb'} className="profile-social-img" onClick={() => window.open(profile.linkFb, "_blank", "noreferrer")}/> :
                             <img src={facebook} alt={'fb'} className="profile-social-img" style={disableSocialStyle}/>}
-                        {profile?.linkTwitter !== null ? <img src={twitter} alt={'twitter'} className="profile-social-img" onClick={() => window.open(profile.linkTwitter, "_blank", "noreferrer")}/> : 
+                        {profile?.linkTwitter !== null ? <img src={twitter} alt={'twitter'} className="profile-social-img" onClick={() => window.open(profile.linkTwitter, "_blank", "noreferrer")}/> :
                             <img src={twitter} alt={'twitter'} className="profile-social-img" style={disableSocialStyle}/>}
                     </div>
                     <div className="profile-followers"><b><span style={{color:"#1db954"}}>{profile?.points} points</span> | {profile.followers?.length} followers | {profile.following?.length} following</b></div>
@@ -105,7 +105,7 @@ function Profile({ callback }) {
                 <ul className="nav">
                     <li className="profile-button" style={active === 'stats' ? buttonStyle : {}} onClick={() => setActive('stats')}>Statistics</li>
                     {profile.id === Number(currentUser.id) ? <li/> : <li className="profile-button" style={active === 'matching' ? buttonStyle : {}} onClick={() => setActive('matching')}>Matching</li>}
-                    {profile.id === Number(currentUser.id) ? <li/> : <li className="profile-button" style={active === 'battle' ? buttonStyle : {}} onClick={() => setActive('battle')}>Playlist battle</li>}
+                    {profile.id === Number(currentUser.id) ? <li/> : <li className="profile-button" style={active === 'battle' ? buttonStyle : {}} onClick={() => setActive('battle')}>Playlist comparison</li>}
                 </ul>
             </nav>
                 {active === 'stats' && <Statistics profile={profile}/>}

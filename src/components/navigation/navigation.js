@@ -53,15 +53,15 @@ function Navigation({ hidden, callback }) {
             </div>
             <div onClick={callback} className="nav-item" style={active === 'library' ? itemStyle : {}}>
                 <img className="image-position" src={library} alt="test" width={'25px'} height={'25px'} />
-                <Link to="/user/analysis" state={{ item: "library" }} className="link-item">Library analysis</Link>
+                <Link to="/user/analysis" state={{ item: "library" }} className="link-item">Library mood</Link>
             </div>
             <div onClick={callback} className="nav-item" style={active === 'playlist' ? itemStyle : {}}>
                 <img className="image-position" src={playlist} alt="test" width={'25px'} height={'25px'} />
-                <Link to="/user/playlist" state={{ item: "playlist" }} className="link-item">Playlist insights</Link>
+                <Link to="/user/playlist" state={{ item: "playlist" }} className="link-item">Playlists mood</Link>
             </div>
             <div onClick={callback} className="nav-item" style={active === 'nearby' ? itemStyle : {}}>
                 <img className="image-position" src={nearby} alt="test" width={'25px'} height={'25px'} />
-                <Link to="/location" state={{ item: "nearby" }} className="link-item">Find users</Link>
+                <Link to="/location" state={{ item: "nearby" }} className="link-item">Nearby</Link>
             </div>
             <div onClick={callback} className="nav-item" style={active === 'rank' ? itemStyle : {}}>
                 <img className="image-position" src={rank} alt="test" width={'25px'} height={'25px'} />

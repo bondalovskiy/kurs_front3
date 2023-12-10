@@ -65,12 +65,12 @@
 
 .unfollow-button:hover {
     box-shadow: #8C0500 0 1px 10px;
-    transition-duration: 1s;
+    transition-duration: .1s;
 }
 
 .follow-button:hover {
     box-shadow: #1db954 0 1px 10px;
-    transition-duration: 1s;
+    transition-duration: .1s;
 }
 
 .profile-name {
@@ -115,7 +115,7 @@
     cursor: pointer;
     color: #b3b3b3;
     border-bottom: 7px solid #1db954;
-    transition-duration: .8s;
+    transition-duration: .1s;
 }
 
 @media (max-width: 768px) {
@@ -187,7 +187,7 @@
     }
 }
 
-/* statistics section */
+/* statistics */
 .statistics-container {
     margin-top: 1%;
     color: #b3b3b3;
@@ -218,8 +218,7 @@
     font-size: 23px;
 }
 
-/* matching container */
-
+/* matching */
 .matching-description {
     margin-bottom: 2%;
 }
@@ -229,7 +228,7 @@
     margin-bottom: 8%;
 }
 
-/* playlist-battle container */
+/* playlist comp */
 .playlist-battle-container {
     justify-content: center;
     display: flex;
@@ -257,7 +256,7 @@
 .playlist-cover-text {
     margin-top: 2%;
     color: #b3b3b3;
-    font-size: 16px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
 }

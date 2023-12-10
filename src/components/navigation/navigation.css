@@ -18,7 +18,7 @@
 }
 
 .image-position {
-    margin-right: 5%;
+    margin-right: 7%;
 }
 
 .nav-item {
@@ -26,14 +26,14 @@
     color: #7d7d7d;
     padding: 10px;
     border-radius: 0px 10px 10px 0px;
-    margin: 10px 0px 0px 0px;
-    font-size: 20px;
+    margin: 10px -15px 0px 0px;
+    font-size: 22px;
 }
 
 .nav-item:hover {
     cursor: pointer;
     background-color: #212121;
-    box-shadow: #212121 0 0 30px;
-    transition-duration: .5s;
+    box-shadow: #212121 0 0 5px;
+    transition-duration: .1s;
     color: #b3b3b3;
 }

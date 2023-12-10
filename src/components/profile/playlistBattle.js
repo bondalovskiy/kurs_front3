@@ -57,11 +57,12 @@ function PlaylistBattle({ profile, callback }) {
     return (
         <div>
             <div className="matching-description playlist-title">
-                <h3>Playlist battle</h3>
-                <div>This functionality allows users to engage in friendly competition and compare the characteristics of their playlists, ultimately rewarding them with points based on the outcome.</div>
+                <h3>Playlist comparison</h3>
+                <div>Page allows users to compare the characteristics of their playlists (based purely on Spotify metrics).</div>
+                <div>UNSTABLE. Playlists with podcasts -> 500 runtime</div>
             </div>
             {!result && <div>
-                {playlists.total === 0 || battlePlaylists.total === 0 ? <h4 className="mt-3" style={{color:"#7d7d7d"}}><center>There are no playlists on your or opponent account.</center></h4> : <div className="row playlist-battle-container">
+                {playlists.total === 0 || battlePlaylists.total === 0 ? <h4 className="mt-3" style={{color:"#7d7d7d"}}><center>There are no playlists on account.</center></h4> : <div className="row playlist-battle-container">
                     <div className="col-md-4 playlist-row">
                         <h5 className="mb-3">Your playlists</h5>
                         <Carousel playlist={playlists} callbackInc={incrementPlaylistIndex} callbackDec={decrementPlaylistIndex} playlistType={'user'} />
@@ -71,7 +72,7 @@ function PlaylistBattle({ profile, callback }) {
                             className="back-playlist-button" style={{ border: "none" }}>Start</button>
                     </div>
                     <div className="col-md-4 playlist-row">
-                        <h5 className="mb-3">Opponent playlists</h5>
+                        <h5 className="mb-3">User playlists</h5>
                         <Carousel playlist={battlePlaylists} callbackInc={incrementPlaylistIndex} callbackDec={decrementPlaylistIndex} playlistType={'opponent'} />
                     </div>
                 </div>}
@@ -114,11 +115,11 @@ function PlaylistBattle({ profile, callback }) {
                     <div className="row mt-3">
                     <div className="col-md-3"/>
                         <div className="col-md-3">
-                            <div>Winner profile score</div>
+                            <div>Winner score</div>
                             <div>{battleResult.winnerProfile?.points}(+{battleResult.result})</div>
                         </div>
                         <div className="col-md-3">
-                            <div>Loser profile score</div>
+                            <div>Loser score</div>
                             <div>{battleResult.loserProfile?.points}(-{battleResult.result})</div>
                         </div>
                         <div className="col-md-3"/>
@@ -128,11 +129,11 @@ function PlaylistBattle({ profile, callback }) {
                     <img src={battleResult.winnerProfile?.imageUrl} alt={'battler'} height={"150px"} width={"150px"}/>
                     <div className="row mt-3">
                         <div className="col">
-                            <div>Winner profile score</div>
+                            <div>Winner score</div>
                             <div>{battleResult.winnerProfile?.points}(+{battleResult.result})</div>
                         </div>
                         <div className="col">
-                            <div>Loser profile score</div>
+                            <div>Loser score</div>
                             <div>{battleResult.loserProfile?.points}(-{battleResult.result})</div>
                         </div>
                     </div>
@@ -172,7 +173,7 @@ function PlaylistBattle({ profile, callback }) {
             </div>}
             <div className="row playlist-battle-description" style={{color:"#7d7d7d", fontStyle:"italic"}}>
                 <div className="col">
-                    <span>* The overall score is determined by combining the Mainstream Score and Boringness Score - sum of valence, tempo, danceability and energy. If the user wins the battle, they will gain points equal to the difference in overall scores between the two users. On the other hand, if the user loses the battle, the difference in overall scores will be subtracted from their total points.</span>
+                    <span>* Overall score is determined by (mainstream + boringness Score) - (valence + tempo + danceability + energy). Points gained are equal to the difference in overall scores between the two users.</span>
                 </div>
             </div>
         </div>

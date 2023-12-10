@@ -38,8 +38,8 @@
     color: black;
     border: line;
     background-color: #1db954;
-    box-shadow: #1db954 0 1px 25px;
-    transition-duration: 0.5s;
+    box-shadow: #1db954 0 1px 10px;
+    transition-duration: 0.1s;
 }
 
 .panel {
@@ -47,7 +47,7 @@
 }
 
 .animate-fade {
-    animation-duration: 0.3s;
+    animation-duration: 0.1s;
     animation-name: animate-fade;
     animation-delay: 0.1s;
     animation-fill-mode: backwards;

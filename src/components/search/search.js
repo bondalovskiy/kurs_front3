@@ -49,7 +49,7 @@ function Search() {
                     </form>
                 </div>
             </div>
-            <h2 className="search-title">Search results for "{username}"</h2>
+            <h2 className="search-title">Results for "{username}"</h2>
             <div className="row row-cols-xl-1 row-cols-xl-2 row-cols-xl-3 row-cols-xl-4 row-cols-xl-5">
             {results?.map((data, i) => {
                   return(

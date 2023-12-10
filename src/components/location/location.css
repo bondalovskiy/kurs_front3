@@ -31,7 +31,7 @@
 
 .location-section {
     position: relative;
-    min-height: 750px;
+    min-height: 150px;
     justify-content: center;
     display: flex;
 }
@@ -42,9 +42,9 @@
     border-radius: 8px;
     background-color: #121212;
     position: absolute;
-    top: 15%;
+    top: 25%;
     left: 31%;
-    height: 250px;
+    height: 150px;
     width: 500px;
     z-index: 0;
 }
@@ -68,7 +68,7 @@
     width: 12rem;
     text-align: center;
     text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-    transition: all .5s;
+    transition: all .1s;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
@@ -89,7 +89,7 @@
     width: 12rem;
     text-align: center;
     text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-    transition: all .5s;
+    transition: all .1s;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;

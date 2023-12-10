@@ -3,7 +3,7 @@ import { postLocation } from "../request/postRequest";
 export const currentLocation = () => {
     navigator.geolocation 
     ? navigator.geolocation.getCurrentPosition(success, error) 
-    : console.log('Geolocation not supported');
+    : console.log('not supported');
 }
 
 export const success = (position) => {
@@ -13,5 +13,5 @@ export const success = (position) => {
 }
 
 export const error = () => {
-    console.log('Unable to retrieve your location')
+    console.log('Unable to retrieve location')
 }

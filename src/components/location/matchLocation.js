@@ -25,7 +25,7 @@ function MatchLocation() {
     return (
         <div className="location-container animate-fade">
             <div className="image-description">
-                <h4>Connect with like-minded individuals who share your musical vibe</h4>
+                <h4>Find users you sharing music taste with</h4>
                 <div className="mt-4">
                     <Map data={users} mapZoom={1.5}/>
                 </div>

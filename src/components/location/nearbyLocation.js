@@ -25,7 +25,7 @@ function NearbyLocation() {
     return (
         <div className="location-container animate-fade">
             <div className="image-description">
-                <h4>Explore users in close proximity who are also part of this application's community</h4>
+                <h4>Find users in ur area</h4>
                 <div className="mt-4">
                     <Map data={users} mapZoom={9.0}/>
                 </div>
