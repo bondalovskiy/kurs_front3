@@ -2,6 +2,37 @@ import React, { useState } from 'react';
 import './PsychologicalAnalysis.css';
 import { getConfiguration } from '../../config';
 
+// Simple markdown parser function
+const parseMarkdown = (markdown) => {
+    if (!markdown) return '';
+    
+    // Replace headers
+    let html = markdown
+        .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+        .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+        .replace(/^# (.*$)/gim, '<h1>$1</h1>');
+    
+    // Replace bold and italic
+    html = html
+        .replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>')
+        .replace(/\*(.*?)\*/gim, '<em>$1</em>')
+        .replace(/\_\_(.*?)\_\_/gim, '<strong>$1</strong>')
+        .replace(/\_(.*?)\_/gim, '<em>$1</em>');
+    
+    // Replace line breaks
+    html = html.replace(/\n/gim, '<br />');
+    
+    // Replace lists
+    html = html
+        .replace(/^\s*\*\s(.*$)/gim, '<li>$1</li>')
+        .replace(/^\s*\-\s(.*$)/gim, '<li>$1</li>');
+    
+    // Replace links
+    html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/gim, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+    
+    return html;
+};
+
 function PsychologicalAnalysis() {
     const [loading, setLoading] = useState(false);
     const [analysis, setAnalysis] = useState('');
@@ -43,7 +74,7 @@ function PsychologicalAnalysis() {
                 console.log('Parsed data:', data);
             } catch (parseError) {
                 console.error('Failed to parse response as JSON:', parseError);
-                // If it's not JSON, just display the text
+                // If it's not JSON, just display the text as markdown
                 setAnalysis(responseText);
                 return;
             }
@@ -81,9 +112,10 @@ function PsychologicalAnalysis() {
             {analysis && (
                 <div className="results-container">
                     <h2>Analysis Results</h2>
-                    <div className="analysis-content">
-                        {analysis}
-                    </div>
+                    <div 
+                        className="analysis-content"
+                        dangerouslySetInnerHTML={{ __html: parseMarkdown(analysis) }}
+                    />
                 </div>
             )}
         </div>

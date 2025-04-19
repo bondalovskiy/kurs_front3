@@ -65,4 +65,51 @@
     color: #ffffff;
     font-size: 16px;
     white-space: pre-wrap;
+}
+
+/* Markdown styles */
+.analysis-content h1, 
+.analysis-content h2, 
+.analysis-content h3 {
+    color: #1DB954;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.analysis-content h1 {
+    font-size: 24px;
+}
+
+.analysis-content h2 {
+    font-size: 20px;
+}
+
+.analysis-content h3 {
+    font-size: 18px;
+}
+
+.analysis-content strong {
+    font-weight: bold;
+    color: #1DB954;
+}
+
+.analysis-content em {
+    font-style: italic;
+    color: #b3b3b3;
+}
+
+.analysis-content a {
+    color: #1DB954;
+    text-decoration: none;
+    border-bottom: 1px dotted #1DB954;
+}
+
+.analysis-content a:hover {
+    border-bottom: 1px solid #1DB954;
+}
+
+.analysis-content li {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    list-style-type: disc;
 } 
