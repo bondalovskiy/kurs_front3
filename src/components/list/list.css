@@ -39,7 +39,7 @@
 }
 
 .compare-number {
-    color: #121212;
+    color: #000000;
 }
 
 tr.track-row>td {
@@ -49,10 +49,10 @@ tr.track-row>td {
 
 .track-row:hover * {
     cursor: pointer;
-    background-color: #212121;
-    box-shadow: #212121 0 0 5px;
+    background-color: #f0f9f4;
+    box-shadow: #f0f9f4 0 0 5px;
     transition-duration: 0.1s;
-    color: #b3b3b3;
+    color: #000000;
 }
 
 .track-img {
@@ -63,7 +63,7 @@ tr.track-row>td {
 }
 
 .list {
-    color: #b3b3b3;
+    color: #000000;
     width: 100%;
 }
 
@@ -94,7 +94,7 @@ tr.track-row>td {
 .artist-container {
     min-height: 750px;
     text-align: center;
-    color: #b3b3b3;
+    color: #000000;
 }
 
 .artist-img {
@@ -104,20 +104,20 @@ tr.track-row>td {
 }
 
 .artist-img:hover, .artist-img:active {
-    box-shadow: #b3b3b3 0 0 10px;
+    box-shadow: #757575 0 0 10px;
     transition-duration: 0.1s;
     transform: scale(1.05) perspective(1px);
 }
 
 .artist-text {
-    text-shadow: -2px 0 #535353, 0 2px #535353, 2px 0 #535353, 0 -2px #535353;
+    text-shadow: -2px 0 #e0e0e0, 0 2px #e0e0e0, 2px 0 #e0e0e0, 0 -2px #e0e0e0;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 60px;
     font-weight: 700;
-    color: #121212;
+    color: #000000;
 }
 
 .artist-description {

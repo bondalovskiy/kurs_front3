@@ -1,6 +1,6 @@
 .analysis-container {
     margin-top: 3%;
-    color: #b3b3b3;
+    color: #000000;
     min-height: 750px;
 }
 
@@ -34,7 +34,7 @@
 .playlist-container {
     font-size: 18px;
     text-align: center;
-    color: #b3b3b3;
+    color: #000000;
     min-height: 750px;
 }
 
@@ -72,7 +72,7 @@
     padding: 10px 30px 10px 30px;
     font-size: 21px;
     cursor: pointer;
-    color: black;
+    color: white;
     border: line;
     background-color: #1db954;
     box-shadow: #1db954 0 1px 5px;
