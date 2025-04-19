@@ -24,7 +24,7 @@ function Export({postTrack}) {
     if (hasError) return (<div><Error code={status}/></div>)
     return (
         <div className="container export-section">
-            {!showButton && <div style={{color:"#535353"}}>Playlist created. Check it out on ur <span style={{color:"#1db954"}}>Spotify account!</span></div>}
+            {!showButton && <div style={{color:"#000000"}}>Playlist created. Check it out on ur <span style={{color:"#1db954"}}>Spotify account!</span></div>}
             <div className="export-button">
                 {showButton && <div className="nav-range-item create-button" onClick={toggleButton}>Create playlist</div>}
                 {!showButton && <div className="check-playlist-button" style={{height:"90%", fontWeight:"400"}}

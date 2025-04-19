@@ -110,14 +110,14 @@ tr.track-row>td {
 }
 
 .artist-text {
-    text-shadow: -2px 0 #e0e0e0, 0 2px #e0e0e0, 2px 0 #e0e0e0, 0 -2px #e0e0e0;
+    text-shadow: -1px 0 #e0e0e0, 0 1px #e0e0e0, 1px 0 #e0e0e0, 0 -1px #e0e0e0;
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 7%;
+    left: 84%;
     transform: translate(-50%, -50%);
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 700;
-    color: #000000;
+    color: #606060;
 }
 
 .artist-description {
@@ -162,7 +162,7 @@ tr.track-row>td {
     bottom: var(--percentage);
     left: 0;
     right: 0;
-    background-color: black;
+    background-color: #d3d3d3;
 }
 
 .genre-label {

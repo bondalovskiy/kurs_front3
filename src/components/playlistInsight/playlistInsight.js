@@ -49,7 +49,7 @@ function PlaylistInsights() {
         <div className="container playlist-container">
             <div className="playlist-title-description">
                 <h1>Playlist mood</h1>
-                <p style={{ color: "#7d7d7d" }}>
+                <p style={{ color: "#000000" }}>
                     Library mood but for ur recently played playlists. No need to praise me, thx.
                 </p>
             </div>

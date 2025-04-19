@@ -84,7 +84,7 @@
     position: absolute;
     top: 60%;
     transform: translateY(-50%);
-    color: #7d7d7d;
+    color: #000000;
     font-size: 18px;
     font-weight: 300;
 }
@@ -116,7 +116,7 @@
     padding: 10px 10px 10px 10px;
     font-size: 21px;
     cursor: pointer;
-    color: white;
+    color: #3c3c3c;
     border: none;
     background-color: #1db954;
     box-shadow: #1db954 0 1px 5px;
@@ -218,7 +218,7 @@
 /* statistics */
 .statistics-container {
     margin-top: 1%;
-    color: #b3b3b3;
+    color: #000000;
 }
 
 .index-col {
@@ -263,7 +263,7 @@
 }
 
 .playlist-title {
-    color: #b3b3b3;
+    color: #000000;
 }
 
 .playlist-battle-description {
@@ -271,7 +271,7 @@
 }
 
 .playlist-row {
-    color: #b3b3b3;
+    color: #000000;
     text-align: center;
 }
 
@@ -283,7 +283,7 @@
     
 .playlist-cover-text {
     margin-top: 2%;
-    color: #b3b3b3;
+    color: #000000;
     font-size: 18px;
     display: flex;
     justify-content: center;
@@ -302,7 +302,7 @@
 }
 
 .nick-text {
-    color: #7d7d7d;
+    color: #000000;
 }
 
 .playlist-carousel {

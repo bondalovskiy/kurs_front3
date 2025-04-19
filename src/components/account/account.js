@@ -41,7 +41,7 @@ function Account() {
         <div className="container panel" style={{textAlign:"center"}}>
             <h1 style={{color:"#000000"}}>Account Settings</h1>
             <hr/>
-            <h5 style={{marginBottom:"70px", color:"#7d7d7d"}}>Link to Spotify (sooner or later i'll massacre this api). Links to socials and account deletion.</h5>
+            <h5 style={{marginBottom:"70px", color:"#000000"}}>Link to Spotify (sooner or later i'll massacre this api). Links to socials and account deletion.</h5>
             <form onSubmit={handleSubmit} autoComplete="off">
                 <div className="link-container">
                     <div className="row input-row">

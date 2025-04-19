@@ -29,7 +29,7 @@ function Location() {
         <div className="location-container animate-fade">
             <div className="image-description">
                 <h1>Music Connections</h1>
-                <div style={{ color: "#7d7d7d" }}>Discover users who share ur music taste.</div>
+                <div style={{ color: "#000000" }}>Discover users who share ur music taste.</div>
                 <div className="container location-section">
                 <img src={worldmap} style={mapHighlight ? mapStyle : null} className="world-img animate-fate" alt="world-map" />
                     <div className="row row-cols-1 row-cols-sm-2 gy-3 location-buttons">
