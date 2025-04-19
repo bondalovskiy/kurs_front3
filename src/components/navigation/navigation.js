@@ -20,9 +20,10 @@ function Navigation({ hidden, callback }) {
     const [active, setActive] = useState();
     const itemStyle = {
         cursor: "pointer",
-        backgroundColor: "#212121",
-        boxShadow: "#212121 0 0 30px",
-        color: "#b3b3b3"
+        backgroundColor: "#e0f5e6",
+        boxShadow: "#e0f5e6 0 0 30px",
+        color: "#1a1a1a",
+        borderLeft: "3px solid #1db954"
     };
 
     useEffect(() => {
