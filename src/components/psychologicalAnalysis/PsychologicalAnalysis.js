@@ -12,8 +12,12 @@ function PsychologicalAnalysis() {
     const generateAnalysis = async () => {
         setLoading(true);
         setError('');
+        setAnalysis('');
         
         try {
+            console.log('Making request to:', `${apiUrl}/stats/profile/me/generate`);
+            console.log('JWT token exists:', !!sessionStorage.getItem('jwt'));
+            
             const response = await fetch(`${apiUrl}/stats/profile/me/generate`, {
                 method: 'GET',
                 headers: {
@@ -22,15 +26,38 @@ function PsychologicalAnalysis() {
                 }
             });
             
+            console.log('Response status:', response.status);
+            
+            // Get the response text first to check what we're getting
+            const responseText = await response.text();
+            console.log('Response text:', responseText);
+            
             if (!response.ok) {
-                throw new Error(`Error: ${response.status}`);
+                throw new Error(`Error: ${response.status} - ${responseText}`);
             }
             
-            const data = await response.json();
-            setAnalysis(data.analysis || JSON.stringify(data, null, 2));
+            // Try to parse the text as JSON
+            let data;
+            try {
+                data = responseText ? JSON.parse(responseText) : {};
+                console.log('Parsed data:', data);
+            } catch (parseError) {
+                console.error('Failed to parse response as JSON:', parseError);
+                // If it's not JSON, just display the text
+                setAnalysis(responseText);
+                return;
+            }
+            
+            // Display the appropriate content
+            if (data && (data.analysis || data.result || data.data || data.message)) {
+                setAnalysis(data.analysis || data.result || data.data || data.message);
+            } else {
+                // If none of the expected fields exist, just stringify the whole response
+                setAnalysis(JSON.stringify(data, null, 2));
+            }
         } catch (err) {
             console.error('Failed to generate analysis:', err);
-            setError('Failed to generate psychological analysis. Please try again later.');
+            setError(`Failed to generate psychological analysis: ${err.message}`);
         } finally {
             setLoading(false);
         }
