@@ -26,7 +26,7 @@ function Profile({ callback }) {
     const { id } = location.state;
     const buttonStyle = {
         cursor: "pointer",
-        color: "#b3b3b3",
+        color: "#000000",
         borderBottom: "7px solid #1db954"
     };
 

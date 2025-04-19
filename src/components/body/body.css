@@ -20,7 +20,7 @@
 }
 
 .section-description {
-    color: #b3b3b3;
+    color: #000000;
     font-size: 16px;
 }
 
@@ -213,4 +213,11 @@
   .iphone-button {
     padding: 0 1.2rem;
   }
+}
+
+.section-nav {
+    color: #000000;
+    padding-bottom: 2%;
+    max-width: 450px;
+    margin-bottom: 20px;
 }

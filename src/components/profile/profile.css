@@ -1,5 +1,6 @@
 .profile-container {
-    margin-top: 2%;
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 .profile-img {
@@ -74,13 +75,8 @@
 }
 
 .profile-name {
-    margin: 0;
-    position: absolute;
-    top: 28%;
-    transform: translateY(-50%);
-    color: #b3b3b3;
-    font-size: 50px;
-    width: 100%;
+    margin-top: 25px;
+    display: inline;
 }
 
 .profile-followers {
@@ -101,21 +97,53 @@
 }
 
 .profile-button {
-    margin-left: 1%;
-    text-align: center;
-    min-width: 50px;
-    padding: 7px;
-    font-size: 20px;
+    padding-bottom: 10px;
     cursor: pointer;
-    color: #7d7d7d;
-    border-bottom: 7px solid #121212;
+    margin-right: 2em;
+    color: #000000;
 }
 
 .profile-button:hover {
-    cursor: pointer;
-    color: #b3b3b3;
-    border-bottom: 7px solid #1db954;
+    color: #000000;
     transition-duration: .1s;
+}
+
+.profile-spotify-button {
+    max-height: 55px;
+    max-width: 120px;
+    border-radius: 8px;
+    margin: 0 3% 0 3%;
+    padding: 10px 10px 10px 10px;
+    font-size: 21px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    background-color: #1db954;
+    box-shadow: #1db954 0 1px 5px;
+    transition-duration: .1s;
+}
+
+.profile-spotify-button:hover {
+    box-shadow: #1db954 0 1px 10px;
+    transition-duration: .1s;
+}
+
+.profile-section {
+    margin-bottom: 5%;
+    padding-bottom: 30px;
+    color: #000000;
+    text-align: center;
+}
+
+.no-profile {
+    margin-top: 20%;
+    color: #000000;
+}
+
+.profile-button-disabled {
+    cursor: help;
+    color: #000000;
+    border-bottom: none;
 }
 
 @media (max-width: 768px) {

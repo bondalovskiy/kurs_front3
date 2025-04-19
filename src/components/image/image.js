@@ -11,7 +11,7 @@ function ImageTrack({list, date}) {
             </div>
             <div className="image-description">
                 <h1>Your top tracks</h1>
-                <p style={{color:"#333333"}}>Page highlights the tracks you listen to most frequently</p>
+                <p style={{color:"#000000"}}>Page highlights the tracks you listen to most frequently</p>
                 <div className='arrows-description'>{date === null ? <br/> : 'arrows show the change in the ranking since ' + date}</div>
             </div>
         </div>
@@ -29,7 +29,7 @@ function ImageArtist({list, date}) {
             </div>
             <div className="image-description">
                 <h1>Your top artists</h1>
-                <p style={{color:"#7d7d7d"}}>Page highlights the artists you listen to most frequently</p>
+                <p style={{color:"#000000"}}>Page highlights the artists you listen to most frequently</p>
                 <div className='arrows-description'>{date === null ? <br/> : 'arrows show the change in the ranking since ' + date}</div>
             </div>
         </div>
@@ -41,7 +41,7 @@ function ImageGenre({date}) {
         <div className="container">
             <div className="image-description">
                 <h1>Your top genres</h1>
-                <p style={{color:"#7d7d7d"}}>Page highlights the genres you listen to most frequently</p>
+                <p style={{color:"#000000"}}>Page highlights the genres you listen to most frequently</p>
                 <div className='arrows-description'>{date === null ? <br/> : 'arrows show the change in the ranking since ' + date}</div>
             </div>
         </div>
@@ -53,7 +53,7 @@ function ImageAnalysis() {
         <div className="container">
             <div className="image-description">
                 <h1>Mood of your music taste</h1>
-                <div style={{color:"#7d7d7d"}}>Spotify measures this type of info of the songs you listen to. Description provided by spotify themselves.</div>
+                <div style={{color:"#000000"}}>Spotify measures this type of info of the songs you listen to. Description provided by spotify themselves.</div>
             </div>
         </div>
     );
@@ -70,7 +70,7 @@ function ImageRecently({list}) {
             </div>
             <div className="image-description mb-4">
                 <h1>Your recent plays</h1>
-                <div style={{color:"#333333"}}>Page highlights tracks you listened recently</div>
+                <div style={{color:"#000000"}}>Page highlights tracks you listened recently</div>
             </div>
         </div>
     );

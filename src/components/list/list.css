@@ -127,19 +127,19 @@ tr.track-row>td {
 .genre-bar-chart {
     min-height: 750px;
     margin-top: 4%;
-    color: #b3b3b3;
+    color: #000000;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
     padding: 10px;
-  }
+}
 
-  .genre-container {
+.genre-container {
     text-align: center;
     justify-content: center;
     display: flex;
 }
-  
+
 .genre-bar {
     text-align: center;
     width: 70px;
@@ -164,7 +164,7 @@ tr.track-row>td {
     right: 0;
     background-color: black;
 }
-  
+
 .genre-label {
     position: absolute;
     height: 60px;
@@ -179,7 +179,7 @@ tr.track-row>td {
     bottom: 115%;
     position: absolute;
 }
-  
+
 .genre-percentage {
     bottom: 100%;
     position: absolute;

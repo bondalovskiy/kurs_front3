@@ -6,7 +6,7 @@
     margin-left: 1%;
     margin-top: 2%;
     margin-bottom: 3%;
-    color: #b3b3b3;
+    color: #000000;
 }
 
 .search-item {
@@ -26,7 +26,7 @@
     background-color: #212121;
     box-shadow: #212121 0 0 10px;
     transition-duration: .1s;
-    color: #b3b3b3;
+    color: #000000;
 }
 
 .search-image {
@@ -37,4 +37,17 @@
 
 .search-box {
     max-width: 80%;
+}
+
+.search-container {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    color: #000000;
+}
+
+.display-result {
+    padding: 20px;
+    margin-top: 20px;
+    color: #000000;
 }
