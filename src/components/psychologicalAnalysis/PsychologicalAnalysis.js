@@ -50,7 +50,7 @@ function PsychologicalAnalysis() {
             console.log('JWT token exists:', !!sessionStorage.getItem('jwt'));
             
             const response = await fetch(`${apiUrl}/stats/profile/me/generate`, {
-                method: 'GET',
+                method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': 'Bearer ' + sessionStorage.getItem('jwt')
