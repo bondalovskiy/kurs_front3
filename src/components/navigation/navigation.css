@@ -24,7 +24,7 @@
 
 .nav-item {
     text-align: left;
-    color: #333333;
+    color: #111111;
     padding: 10px;
     border-radius: 0px 10px 10px 0px;
     margin: 10px -15px 0px 0px;
@@ -36,5 +36,5 @@
     background-color: #e8e8e8;
     box-shadow: #e8e8e8 0 0 5px;
     transition-duration: .1s;
-    color: #1a1a1a;
+    color: #000000;
 }
