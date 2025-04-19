@@ -1,0 +1,11 @@
+.psychological-analysis-container {
+    padding: 20px;
+    background-color: #121212;
+    color: white;
+    min-height: 100vh;
+}
+
+.psychological-analysis-container h1 {
+    margin-bottom: 20px;
+    color: #1DB954;
+} 

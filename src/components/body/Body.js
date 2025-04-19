@@ -14,6 +14,7 @@ import { Home } from '../home/home';
 import Beta from '../beta/beta';
 import Search from '../search/search';
 import WrapperBody from '../wrapper/WrapperBody';
+import PsychologicalAnalysis from '../psychologicalAnalysis/PsychologicalAnalysis';
 
 import { Route, Routes } from "react-router-dom";
 
@@ -44,7 +45,8 @@ function Body() {
                 <Route path="/rank" element={<PrivateRoute><WrapperBody component={<Rank/>}/></PrivateRoute>}/>
                 <Route path="/location" element={<PrivateRoute><WrapperBody component={<Location/>}/></PrivateRoute>}/>
                 <Route path="/location/match" element={<PrivateRoute><WrapperBody component={<MatchLocation/>}/></PrivateRoute>}/>      
-                <Route path="/location/nearby" element={<PrivateRoute><WrapperBody component={<NearbyLocation/>}/></PrivateRoute>}/>                
+                <Route path="/location/nearby" element={<PrivateRoute><WrapperBody component={<NearbyLocation/>}/></PrivateRoute>}/>
+                <Route path="/psychological-analysis" element={<PrivateRoute><WrapperBody component={<PsychologicalAnalysis/>}/></PrivateRoute>}/>                
             </Routes>
         </div>
     );

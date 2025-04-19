@@ -6,7 +6,8 @@ import genre from '../../resources/genre.png';
 import playlist from '../../resources/playlist.png';
 import rank from '../../resources/user-rank.png';
 import search from '../../resources/search.png';
-import nearby from '../../resources/map.png'
+import nearby from '../../resources/map.png';
+import psychology from '../../resources/psychology.png';
 
 import './navigation.css';
 
@@ -62,6 +63,10 @@ function Navigation({ hidden, callback }) {
             <div onClick={callback} className="nav-item" style={active === 'nearby' ? itemStyle : {}}>
                 <img className="image-position" src={nearby} alt="test" width={'25px'} height={'25px'} />
                 <Link to="/location" state={{ item: "nearby" }} className="link-item">Nearby</Link>
+            </div>
+            <div onClick={callback} className="nav-item" style={active === 'psychology' ? itemStyle : {}}>
+                <img className="image-position" src={psychology} alt="test" width={'25px'} height={'25px'} />
+                <Link to="/psychological-analysis" state={{ item: "psychology" }} className="link-item">Psychological Analysis</Link>
             </div>
             <div onClick={callback} className="nav-item" style={active === 'rank' ? itemStyle : {}}>
                 <img className="image-position" src={rank} alt="test" width={'25px'} height={'25px'} />
