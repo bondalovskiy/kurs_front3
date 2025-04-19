@@ -1,5 +1,5 @@
 .beta-title {
-    color: #b3b3b3;
+    color: #3d3d3d;
     text-align: center;
     margin-bottom: 4%;
 }
@@ -14,14 +14,14 @@
     padding: 10px 10px 10px 10px;
     font-size: 16px;
     cursor: pointer;
-    color: black;
+    color: white;
     border: line;
     background-color: #1db954;
 }
 
 .button-submit:hover {
     cursor: pointer;
-    color: black;
+    color: white;
     border: line;
     background-color: #1db954;
     box-shadow: #1db954 0 1px 20px;

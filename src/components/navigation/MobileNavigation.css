@@ -33,10 +33,11 @@
 .menu {
     width: 160%;
     height: 100vh;
-    background-color: #121212;
+    background-color: #ffffff;
     position: absolute;
     top: 50;
     z-index: -1;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .hidden {
