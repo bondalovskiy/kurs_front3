@@ -8,4 +8,51 @@
 .psychological-analysis-container h1 {
     margin-bottom: 20px;
     color: #1DB954;
+}
+
+.description {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #b3b3b3;
+}
+
+.generate-button {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.generate-button:hover {
+    background-color: #1ed760;
+}
+
+.generate-button:disabled {
+    background-color: #1DB95480;
+    cursor: not-allowed;
+}
+
+.results-container {
+    margin-top: 30px;
+    background-color: #212121;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.results-container h2 {
+    color: #1DB954;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.analysis-content {
+    line-height: 1.6;
+    color: #ffffff;
+    font-size: 16px;
 } 
