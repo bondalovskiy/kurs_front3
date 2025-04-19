@@ -1,17 +1,39 @@
 import React, { useState } from 'react';
 import './PsychologicalAnalysis.css';
+import { getConfiguration } from '../../config';
 
 function PsychologicalAnalysis() {
     const [loading, setLoading] = useState(false);
     const [analysis, setAnalysis] = useState('');
+    const [error, setError] = useState('');
+    
+    const { apiUrl } = getConfiguration();
 
-    const generateAnalysis = () => {
+    const generateAnalysis = async () => {
         setLoading(true);
-        // Simulate API call with setTimeout
-        setTimeout(() => {
-            setAnalysis('This user shows a preference for energetic music with positive emotional valence. The listening patterns suggest an extroverted personality type with openness to new experiences. There is a correlation between music choices and mood regulation strategies, indicating effective emotional management through music.');
+        setError('');
+        
+        try {
+            const response = await fetch(`${apiUrl}/stats/profile/me/generate`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${localStorage.getItem('token')}`
+                }
+            });
+            
+            if (!response.ok) {
+                throw new Error(`Error: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            setAnalysis(data.analysis || JSON.stringify(data, null, 2));
+        } catch (err) {
+            console.error('Failed to generate analysis:', err);
+            setError('Failed to generate psychological analysis. Please try again later.');
+        } finally {
             setLoading(false);
-        }, 2000);
+        }
     };
 
     return (
@@ -26,6 +48,8 @@ function PsychologicalAnalysis() {
             >
                 {loading ? 'Generating...' : 'Generate Analysis'}
             </button>
+            
+            {error && <p className="error-message">{error}</p>}
             
             {analysis && (
                 <div className="results-container">
