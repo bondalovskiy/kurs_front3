@@ -33,10 +33,10 @@ function Navigation({ hidden, callback }) {
 
     return (
         <div className={hidden}>
-            <div onClick={callback} className="nav-item nav-search-item" style={active === 'search' ? itemStyle : {}}>
+            {/*<div onClick={callback} className="nav-item nav-search-item" style={active === 'search' ? itemStyle : {}}>
                 <img className="image-position" src={search} alt="test" width={'25px'} height={'25px'}/>
                 <Link to="/user/search" state={{ item: "search" }} className="link-item">Search</Link>
-            </div>
+            </div>*/}
             <div onClick={callback} className="nav-item" style={active === 'track' ? itemStyle : {}}>
                 <img className="image-position" src={track} alt="test" width={'25px'} height={'25px'}/>
                 <Link to="/track/top" state={{ item: "track" }} className="link-item">Top tracks</Link>
@@ -53,26 +53,26 @@ function Navigation({ hidden, callback }) {
                 <img className="image-position" src={history} alt="test" width={'25px'} height={'25px'} />
                 <Link to="/user/history" state={{ item: "history" }} className="link-item">Recently played</Link>
             </div>
-            <div onClick={callback} className="nav-item" style={active === 'library' ? itemStyle : {}}>
+            {/*<div onClick={callback} className="nav-item" style={active === 'library' ? itemStyle : {}}>
                 <img className="image-position" src={library} alt="test" width={'25px'} height={'25px'} />
                 <Link to="/user/analysis" state={{ item: "library" }} className="link-item">Library mood</Link>
-            </div>
-            <div onClick={callback} className="nav-item" style={active === 'playlist' ? itemStyle : {}}>
+            </div>*/}
+            {/*<div onClick={callback} className="nav-item" style={active === 'playlist' ? itemStyle : {}}>
                 <img className="image-position" src={playlist} alt="test" width={'25px'} height={'25px'} />
                 <Link to="/user/playlist" state={{ item: "playlist" }} className="link-item">Playlists mood</Link>
             </div>
             <div onClick={callback} className="nav-item" style={active === 'nearby' ? itemStyle : {}}>
                 <img className="image-position" src={nearby} alt="test" width={'25px'} height={'25px'} />
                 <Link to="/location" state={{ item: "nearby" }} className="link-item">Nearby</Link>
-            </div>
+            </div>*/}
             <div onClick={callback} className="nav-item" style={active === 'psychology' ? itemStyle : {}}>
                 <img className="image-position" src={psychology} alt="test" width={'25px'} height={'25px'} />
                 <Link to="/psychological-analysis" state={{ item: "psychology" }} className="link-item">Psychological Analysis</Link>
             </div>
-            <div onClick={callback} className="nav-item" style={active === 'rank' ? itemStyle : {}}>
+            {/*<div onClick={callback} className="nav-item" style={active === 'rank' ? itemStyle : {}}>
                 <img className="image-position" src={rank} alt="test" width={'25px'} height={'25px'} />
                 <Link to="/rank" state={{ item: "rank" }} className="link-item">User ranking</Link>
-            </div>
+            </div>*/}
         </div>
     );
 }
