@@ -41,7 +41,7 @@ function HeaderLogged() {
                     <div className="dropdown">
                         <img className="user-image" src={sessionStorage.getItem('imageUrl')} alt="userImage" width={'40px'} height={'40px'} type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" />
                         <Search setShowBar={setShowBar} showBar={showBar}/>
-                        <ul className="dropdown-menu dropdown-menu-end dropdown-menu-dark animate-bar" aria-labelledby="dropdownMenuButton1">
+                        <ul className="dropdown-menu dropdown-menu-end animate-bar" aria-labelledby="dropdownMenuButton1">
                             <li><h6 className="dropdown-header">{sessionStorage.getItem('username')}</h6></li>
                             <li className="dropdown-item dropdown-link-item"><Link to="/user/profile" state={{ id: id }} className="link-item">Your profile</Link></li>
                             {sessionStorage.getItem('username') === getConfiguration().roleUsername ? <li className="dropdown-item dropdown-link-item"><Link to="/admin/beta" className="link-item">Beta users</Link></li> : null}

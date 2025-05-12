@@ -16,25 +16,40 @@
     top: 12%;
     position: sticky;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    min-width: 220px;
+    border-radius: 0 10px 10px 0;
+    overflow: hidden;
+    padding-right: 0;
 }
 
 .image-position {
-    margin-right: 7%;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 .nav-item {
     text-align: left;
     color: #111111;
-    padding: 10px;
-    border-radius: 0px 10px 10px 0px;
-    margin: 10px -15px 0px 0px;
+    padding: 12px 15px;
+    margin: 10px 0 0px 0;
     font-size: 22px;
+    display: flex;
+    align-items: center;
+    transition-duration: .2s;
 }
 
 .nav-item:hover {
     cursor: pointer;
     background-color: #e8e8e8;
-    box-shadow: #e8e8e8 0 0 5px;
-    transition-duration: .1s;
     color: #000000;
+}
+
+.link-item {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    width: 80%;
+    padding: 5px;
 }
