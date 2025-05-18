@@ -67,7 +67,7 @@ export function Home() {
                             </div>
                             <div className="mb-3">
                                 <input type="email" className="beta-form-input form-control" id="email" name="email" placeholder="Email"/>
-                                <div id="email-help" className="form-text">Ur data is safe type of bullshit. source: trust me bro.</div>
+                                <div id="email-help" className="form-text">Ur data is safe typa bs/ source: trust me bro.</div>
                             </div>
                             <button type="submit" className="register-button" 
                             onClick={toggleConfirmation} disabled={disable} style={disable ? {opacity:'0.7'} : null}>{showConfirmation}</button>
